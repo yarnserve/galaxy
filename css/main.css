@@ -29,8 +29,72 @@ body {
 
 .inner {
   width: 1160px;
-  background-color: #ddd;
   margin: 0 auto;
 }
 
+.active {
+  color: var(--accent);
+}
+
 /* header */
+header .inner {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+header .inner h1 {
+  margin-right: auto;
+  font-size: 40px;
+}
+
+header .inner ul {
+  display: flex;
+  gap: 60px;
+}
+
+header .inner ul li a {
+  font-size: 14px;
+  height: 80px;
+  display: block;
+  line-height: 80px;
+  position: relative;
+}
+
+header .inner ul li a:hover {
+  color: var(--accent);
+}
+
+header .inner ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: var(--accent);
+  transition: width 0.3s;
+}
+
+header .inner ul li a:hover::before {
+  width: 100%;
+}
+
+header .inner ul li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--accent);
+}
+
+header .inner i {
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+/* slide */
+.slide {
+  height: 500px;
+  background-color: var(--bgColor);
+}

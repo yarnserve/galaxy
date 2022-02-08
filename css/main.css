@@ -270,10 +270,26 @@ header .inner i {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .product_02 .box_wrapper .box img {
   width: 160px;
+  position: absolute;
+  transition: all 0.6s;
+}
+
+.product_02 .box_wrapper .box img.second {
+  opacity: 0;
+}
+
+.product_02 .box_wrapper .box:hover img.first {
+  opacity: 0;
+}
+
+.product_02 .box_wrapper .box:hover img.second {
+  opacity: 1;
 }
 
 /* banner */

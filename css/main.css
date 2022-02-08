@@ -438,3 +438,32 @@ footer {
 .footer__info .social i {
   font-size: 30px;
 }
+
+/* footer menu */
+.footer__menu {
+  display: flex;
+}
+
+.footer__menu a:hover {
+  text-decoration: underline;
+}
+
+.footer__menu > li {
+  width: 220px;
+}
+
+.footer__menu > li > a {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 20px 20px 0;
+  display: inline-block;
+}
+
+.footer__menu ul {
+  margin-top: 26px;
+}
+
+.footer__menu ul li a {
+  display: block;
+  padding: 16px 0;
+}

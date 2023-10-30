@@ -41,6 +41,11 @@ a {
     transition: all 0.3s; 
 }
 
+.btn.white {
+    background-color: #fff;
+    color: #111;
+}
+
 .btn:hover {
     background-color: #111;
     color: #fff;
@@ -50,6 +55,12 @@ a {
     background-color: #EB5757;
     border: 1px solid #EB5757; 
 }
+
+.btn.white:hover {
+    background-color: #EB5757;
+    color: #fff;
+}
+
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -260,4 +271,35 @@ body {
 
 .section2 .items li:hover img:last-child {
     opacity: 1;
+}
+
+/* big_banner */
+.big_banner {
+    height: 600px;
+    background-image: url('../images/bg_banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 93px;
+
+    /* background: url("../images/bg_banner.jpg") no-repeat center;
+    background-size: cover; */
+}
+
+.big_banner .text_box {
+    color: #fff;
+    padding-top: 169px;
+}
+
+.big_banner .text_box h2 {
+    font-size: 64px;
+    font-weight: 700;
+}
+.big_banner .text_box p {
+    font-size: 20px;
+    color: #ccc;
+    line-height: 1.5;
+    width: 42%;
+    margin-top: 41px;
+    margin-bottom: 68px;    
 }
